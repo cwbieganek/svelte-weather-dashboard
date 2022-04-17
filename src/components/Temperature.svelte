@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let temperature: number;
+  export let temperature: number | undefined = undefined;
   let temperatureColor: string;
   $: temperatureColor = getColorForTemperature(temperature);
 
