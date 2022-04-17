@@ -1,9 +1,13 @@
 <script lang="ts">
   import Temperature from './components/Temperature.svelte'
+  import WordSplitter from './components/WordSplitter.svelte';
 </script>
 
 <main>
-  <Temperature temperature={100} />
+  <Temperature />
+  <p>
+    <WordSplitter />
+  </p>
 </main>
 
 <style>
@@ -13,7 +17,6 @@
   }
 
   main {
-    text-align: center;
     padding: 1em;
     margin: 0 auto;
   }
