@@ -20,19 +20,10 @@
   }
 </script>
 
-<div class="container">
-  <span class="temperature-text">Temperature: {temperature || "N/A"}</span>
+<div class="w-fit rounded-md border border-solid border-black px-4 py-2">
+  <span class="font-bold">Temperature: {temperature || "N/A"}</span>
 </div>
 
 <style>
-  .container {
-    width: fit-content;
-    border: 1px solid black;
-    border-radius: 4px;
-    padding: 12px 20px;
-  }
 
-  .temperature-text {
-    font-weight: bold;
-  }
 </style>
