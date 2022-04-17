@@ -21,10 +21,7 @@
 </script>
 
 <div class="container">
-  <p class="temperature-text" style="--temperature-color: {temperatureColor}">Temperature: {temperature || ""}</p>
-  <div>
-    <label for="temperature">Enter a temperature: </label><input type="number" name="temperature" bind:value={temperature} />
-  </div>
+  <span class="temperature-text">Temperature: {temperature || "N/A"}</span>
 </div>
 
 <style>
@@ -33,15 +30,9 @@
     border: 1px solid black;
     border-radius: 4px;
     padding: 12px 20px;
-    background-color: black;
   }
 
   .temperature-text {
-    color: var(--temperature-color);
     font-weight: bold;
-  }
-
-  label {
-    color: white;
   }
 </style>
