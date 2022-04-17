@@ -1,8 +1,10 @@
 <script lang="ts">
-  import Temperature from './components/Temperature.svelte'
+  import Temperature from './components/Temperature.svelte';
   import WordSplitter from './components/WordSplitter.svelte';
+  import Header from './components/Header.svelte';
 </script>
 
+<Header />
 <main>
   <Temperature />
   <p>
